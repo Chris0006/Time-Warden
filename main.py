@@ -237,7 +237,7 @@ while True:
                                         # print(f"Process with PID {pid} has been terminated.") 
                                                                     
                                     self.master.destroy()
-                                    time.sleep(timer*1) # turn minutes into seconds
+                                    time.sleep(timer*60) # turn minutes into seconds
                                     end_process()
                                 #################################
 
